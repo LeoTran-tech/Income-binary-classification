@@ -2,8 +2,8 @@
 
 ## Overview
 
-This project explores **income classification** using both **supervised** and **unsupervised** machine learning techniques.  
-The goal is to predict whether an individual's annual income is **greater or less than \$50,000**, based on demographic and employment attributes.
+This project explores income classification using both supervised and unsupervised machine learning techniques.  
+The goal is to predict whether an individual's annual income is greater or less than \$50,000, based on demographic and employment attributes.
 
 Three models are developed and evaluated:
 
@@ -17,21 +17,21 @@ Each model is trained, tested, and compared using normalized data, cross-validat
 
 ## Dataset
 
-- **File:** `income.csv`
-- **Records:** 26,215 (after cleaning → 21,537)
-- **Attributes:** 9 original features including age, education, occupation, hours-per-week, and marital status
-- **Target Variable:** `income` (binary: >50K or ≤50K)
+- File: `income.csv`
+- Records: 26,215 (after cleaning → 21,537)
+- Attributes: 9 original features including age, education, occupation, hours-per-week, and marital status
+- Target Variable: `income` (binary: >50K or ≤50K)
 
 ### Preprocessing Steps
 
-1. **Handle Missing Values:** removed rows with missing data
-2. **Remove Duplicates:** ensured each record is unique
-3. **Encode Categorical Features:**
+1. Handle Missing Values: removed rows with missing data
+2. Remove Duplicates: ensured each record is unique
+3. Encode Categorical Features:
    - Ordinal encoding for _education_
    - Binary encoding for _sex_ (0 = Male, 1 = Female)
    - One-hot encoding for all other categorical features
-4. **Normalization:** scaled all features using **MinMaxScaler**
-5. **Data Split:**
+4. Normalization: scaled all features using MinMaxScaler
+5. Data Split:
    - Training: 90%
    - Testing: 10%
 
@@ -81,8 +81,8 @@ Each model is trained, tested, and compared using normalized data, cross-validat
 
 ### Prototype Comparison:
 
-- **Cluster 0 (lower income):** younger, female, lower education, fewer working hours, mostly “NotMarried”
-- **Cluster 1 (higher income):** older, male, higher education, longer working hours, mostly “Married”
+- Cluster 0 (lower income): younger, female, lower education, fewer working hours, mostly “NotMarried”
+- Cluster 1 (higher income): older, male, higher education, longer working hours, mostly “Married”
 
 ➡️ K-Means captured general trends but performed worse than the supervised models, as expected.
 
@@ -90,8 +90,8 @@ Each model is trained, tested, and compared using normalized data, cross-validat
 
 ## Technologies Used
 
-- **Python 3**
-- **Libraries:**
+- Python 3
+- Libraries:
   - `pandas`, `numpy`, `matplotlib`, `seaborn`
   - `scikit-learn` for model training, normalization, cross-validation, and clustering
 
