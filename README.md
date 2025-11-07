@@ -13,8 +13,6 @@ Three models are developed and evaluated:
 
 Each model is trained, tested, and compared using normalized data, cross-validation, and fine-tuning.
 
----
-
 ## Dataset
 
 - File: `income.csv`
@@ -35,8 +33,6 @@ Each model is trained, tested, and compared using normalized data, cross-validat
    - Training: 90%
    - Testing: 10%
 
----
-
 ## Models and Evaluation
 
 ### **1️⃣ Logistic Regression**
@@ -51,8 +47,6 @@ Each model is trained, tested, and compared using normalized data, cross-validat
 
 ➡️ The fine-tuned parameters were nearly identical to the default optimal setup.
 
----
-
 ### **2️⃣ Support Vector Machine (SVM)**
 
 - Explored different kernels (`linear`, `poly`) and hyperparameters (`C`, `degree`, `gamma`)
@@ -64,8 +58,6 @@ Each model is trained, tested, and compared using normalized data, cross-validat
 | Test Accuracy       | 0.7924        | 0.7966       |
 
 ➡️ SVM slightly outperformed Logistic Regression after fine-tuning, achieving the highest accuracy.
-
----
 
 ### **3️⃣ K-Means Clustering (Unsupervised)**
 
@@ -86,16 +78,12 @@ Each model is trained, tested, and compared using normalized data, cross-validat
 
 ➡️ K-Means captured general trends but performed worse than the supervised models, as expected.
 
----
-
 ## Technologies Used
 
 - Python 3
 - Libraries:
   - `pandas`, `numpy`, `matplotlib`, `seaborn`
   - `scikit-learn` for model training, normalization, cross-validation, and clustering
-
----
 
 ## How to Run
 
